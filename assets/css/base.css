@@ -1,4 +1,6 @@
 /* Base CSS */
+
+/* Common */
 :root {
     --primary-color: #ee4d2d;
     --white-color: #fff;
@@ -8,13 +10,77 @@
     --star-gold-color: #ffce3e;
 }
 
-* {
-    box-sizing: inherit;
-}
-
 html {
     font-size: 62.5%;
-    line-height: 1.6rem;
-    font-family: "Roboto", sans-serif;
-    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    min-width: 8rem;
+    background: #0f1b4c;
+    border-radius: 8px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Main section */
+.container {
+    background: #e6f0ff;
+    max-width: 144rem;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 3.8rem 16.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header .header-left .logo {
+    color: #000228;
+    /* cursor: pointer; */
+}
+
+.header .nav .nav-list {
+    display: flex;
+    margin-left: 4rem;
+}
+
+.header .nav .nav-item a {
+    padding: 0.8rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: #4f5361;
+}
+
+.header .header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: #0f1b4c;
+}
+
+.header .header-right .signup,
+.header .header-right .register {
+    display: block;
+    padding: 0.9rem;
+}
+
+.header .header-right .register {
+    margin-left: 2rem;
 }
